@@ -3,11 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>DS+R — Architecture that changes the way you see</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Saira+Extra+Condensed:wght@400;500&family=Archivo:wdth,wght@125,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" language="javascript"></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+
+  <div class="page">
+
+    <!-- ===== Backgrounds ===== -->
+    <div class="hero-photo" aria-hidden="true">
+      <img src="images/homepage-photo.jpg" alt="">
+      <div class="hero-hue"></div>
+    </div>
+    <div class="dark-bg" aria-hidden="true"></div>
+    <div class="yellow-panel" aria-hidden="true"></div>
+    <div class="footer-bg" aria-hidden="true"></div>
+
+    <!-- ===== Navigation ===== -->
+    <header class="nav">
+      <a class="logo" href="index.html" aria-label="DS+R home">
+        <img src="images/logo-dsr.png" alt="DS+R">
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about">Studio</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">News</a>
+        <a href="meet-us.html">Meet Us</a>
+      </nav>
+      <button class="sandwich" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- ===== Big blue arrows (page-long) ===== -->
+    <div class="blue-arrow blue-arrow--up" aria-hidden="true">
+      <img src="images/arrow-blue.png" alt="">
+    </div>
+    <div class="blue-arrow blue-arrow--down" aria-hidden="true">
+      <img src="images/arrow-blue.png" alt="">
+    </div>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-title__big">Architecture</span><br>
+        that <em>changes</em> the<br>
+        way you <em>see</em>
+      </h1>
+      <a class="btn btn--categories" href="categories.html">
+        <span>Categories</span>
+        <img class="btn__arrow" src="images/arrow-categories.svg" alt="">
+      </a>
+    </section>
+
+    <!-- ===== About Us ===== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="about-title" id="about-title">About Us</h2>
+
+      <div class="yellow-arrow" aria-hidden="true">
+        <img src="images/arrows-yellow.png" alt="">
+      </div>
+
+      <figure class="about-photo">
+        <img src="images/about-us-photo.jpg" alt="The DS+R team in discussion around a conference table">
+        <div class="about-photo__burn" aria-hidden="true"></div>
+      </figure>
+
+      <p class="about-text">
+        Diller Scofidio + Renfro (DS+R) is an interdisciplinary design studio that works at the intersection of architecture, the visual arts, and the performing arts. Founded in 1981, the New York-based studio established its identity through independent, conceptual, and self-generated art and architecture installations before reaching international prominence with large cultural and civic projects such as Blur Building at the 2002 Swiss Expo; the Institute of Contemporary Art in Boston; the redevelopment of the Lincoln Center for the Performing Arts in New York; and the High Line in New York. Today, DS+R is led by four partners—Elizabeth Diller, Ricardo Scofidio, Charles Renfro and Benjamin Gilmartin—who work collaboratively with a staff of over 100 architects, designers, artists, and researchers.
+      </p>
+
+      <a class="btn btn--meet" href="meet-us.html">
+        <span>Meet Us</span>
+        <img class="btn__arrow" src="images/arrow-meet-us.svg" alt="">
+      </a>
+
+      <ul class="facts">
+        <li class="fact">
+          <span class="fact__number">45 years</span>
+          <span class="fact__label">designing since 1981</span>
+        </li>
+        <li class="fact">
+          <span class="fact__number">100+</span>
+          <span class="fact__label">architects, designers, artists, and researchers</span>
+        </li>
+        <li class="fact">
+          <span class="fact__number">4</span>
+          <span class="fact__label">Partners leading the studio</span>
+        </li>
+        <li class="fact">
+          <span class="fact__number">6</span>
+          <span class="fact__label">fields of practice, from architecture to digital media and print</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+          <img src="images/social-2.svg" alt="">
+        </a>
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener">
+          <img src="images/social-1.svg" alt="">
+        </a>
+      </div>
+      <p class="footer__copy">@DS+RCOMPANY.ALL.RIGHTS.RESERVED.</p>
+      <nav class="footer__links" aria-label="Legal">
+        <a href="#">Privacy Policy</a>
+        <span class="footer__divider" aria-hidden="true"><img src="images/footer-divider.svg" alt=""></span>
+        <a href="#">Terms of Use</a>
+        <span class="footer__divider" aria-hidden="true"><img src="images/footer-divider.svg" alt=""></span>
+        <a href="#">Terms &amp; Conditions</a>
+      </nav>
+    </footer>
+
+  </div>
 
 </body>
 </html>
