@@ -131,11 +131,11 @@ h1, h2, p, figure { margin: 0; }
   left: 595rem;            /* page x = 635 */
   top: 26rem;              /* page y = 62 */
   display: flex;
-  gap: 40rem;
+  gap: 34rem;
   font-family: var(--font-extended);
   font-stretch: 125%;
   font-weight: 500;
-  font-size: 32rem;
+  font-size: 26rem;
   line-height: 38rem;
   color: #fff;
   white-space: nowrap;
@@ -232,10 +232,12 @@ h1, h2, p, figure { margin: 0; }
   justify-content: center;
   border-radius: 8rem;
   box-shadow: 5rem 8rem 0.8rem 0 #fff;
-  font-family: var(--font-extended);
-  font-stretch: 125%;
+  font-family: var(--font-comp);
+  font-stretch: normal;
   font-weight: 500;
+  letter-spacing: normal;
   line-height: normal;
+  word-spacing: normal;
   white-space: nowrap;
   transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -375,6 +377,7 @@ h1, h2, p, figure { margin: 0; }
   column-gap: 104rem;
   grid-auto-rows: 130rem;
   font-family: var(--font-comp);
+  font-weight: 600;
   text-align: center;
   color: var(--c-slate);
   z-index: 4;

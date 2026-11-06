@@ -1,0 +1,242 @@
+:root {
+  --c-dark: #091317;
+  --c-yellow: #fef0b8;
+  --c-blue: #c0e7f8;
+  --c-brown: #96856b;
+  --c-slate: #476a7a;
+  --font-comp: "Apotek Comp", "Saira Extra Condensed", "Arial Narrow", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: calc(100vw / 1728);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--c-blue);
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+
+.nav {
+  position: absolute;
+  left: 40rem;
+  top: 36rem;
+  width: 1592rem;
+  height: 162rem;
+  z-index: 5;
+}
+
+.logo {
+  position: absolute;
+  width: 190rem;
+  height: 162rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-links {
+  position: absolute;
+  left: 581rem;
+  top: 26rem;
+  display: flex;
+  gap: 40rem;
+  color: #fff;
+  font-family: "apotek-extended", sans-serif;
+  font-size: 32rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 38rem;
+  white-space: nowrap;
+}
+
+.sandwich {
+  position: absolute;
+  left: 1547rem;
+  top: 26rem;
+  width: 45rem;
+  height: 13rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sandwich span {
+  width: 45rem;
+  height: 3rem;
+  background: #fff;
+}
+
+.cultural-page {
+  position: relative;
+  width: 100%;
+  height: 1116rem;
+  overflow: hidden;
+  background: var(--c-dark);
+}
+
+.cultural-hero-group {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transform: translateY(120rem);
+}
+
+.cultural-arrow {
+  position: absolute;
+  left: 303rem;
+  top: -113rem;
+  width: 1900rem;
+  height: 1148rem;
+  object-fit: contain;
+  transform: rotate(141.83deg);
+  transform-origin: center;
+  z-index: 1;
+}
+
+.cultural-heading {
+  position: absolute;
+  left: 395rem;
+  top: 59rem;
+  width: 851rem;
+  height: 474rem;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+
+.cultural-heading h1 {
+  position: absolute;
+  inset: 0 0 auto;
+  margin: 0;
+  font-family: "apotek-comp", sans-serif;
+  font-style: normal;
+  font-size: 250rem;
+  font-weight: 600;
+  line-height: 250rem;
+}
+
+.cultural-heading p {
+  position: absolute;
+  left: 125rem;
+  top: 235rem;
+  width: 100%;
+  margin: 0;
+  color: var(--c-yellow);
+  font-size: 100rem;
+  font-family: "apotek-comp", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100rem;
+}
+
+.project-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  transform: translateY(120rem);
+}
+
+.project {
+  position: absolute;
+  width: 337rem;
+  height: 394rem;
+  overflow: hidden;
+  transition: transform .2s ease;
+}
+
+.project:hover,
+.project:focus-visible {
+  transform: none;
+}
+
+.project > img {
+  position: absolute;
+  width: 199.89%;
+  height: 394rem;
+  object-fit: cover;
+}
+
+.project::before {
+  position: absolute;
+  inset: 0 0 83rem;
+  background: var(--c-blue);
+  content: "";
+  mix-blend-mode: hue;
+  opacity: .85;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 1;
+}
+
+.project:hover::before,
+.project:focus-visible::before {
+  opacity: 0;
+}
+
+.project > span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 83rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4rem;
+  background: var(--c-yellow);
+  color: var(--c-brown);
+  font-family: var(--font-comp);
+  text-align: center;
+  transition: background-color .2s ease, color .2s ease;
+  z-index: 6;
+}
+
+.project:hover > span,
+.project:focus-visible > span {
+  background: var(--c-yellow);
+  color: var(--c-brown);
+}
+
+.project strong {
+  font-size: 55rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.project small {
+  font-size: 25rem;
+  font-weight: 400;
+  line-height: 30rem;
+}
+
+.project--casa { left: 70rem; top: 60rem; }
+.project--casa > img { left: -56.21%; top: -6.03%; }
+
+.project--shed { left: 1324rem; top: 60rem; }
+.project--shed > img { left: -33.23%; top: -9.31%; }
+
+.project--unm { left: 70rem; top: 531rem; }
+.project--unm > img { left: -8.97%; top: -17.5%; }
+
+.project--moma { left: 473rem; top: 531rem; }
+.project--moma > img { left: -40.89%; top: -8.22%; }
+
+.project--canal { left: 896rem; top: 531rem; }
+.project--canal > img { left: -52.38%; top: -16.41%; }
+
+.project--sarofim { left: 1313rem; top: 531rem; }
+.project--sarofim > img { left: -52.38%; top: -16.41%; }
